@@ -1,15 +1,15 @@
 {
   "projects": {
-    "default": "ministry-report-app"
+    "default": "minreportrcc"
   },
   "targets": {
-    "ministry-report-app": {
+    "minreportrcc": {
       "hosting": {
         "app": [
-          "ministry-report-app"
+          "minreportrcc"
         ],
         "docs": [
-          "docs-ministry-report-app"
+          "docs-minreportrcc"
         ]
       }
     }
