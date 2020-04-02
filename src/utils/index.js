@@ -1,3 +1,4 @@
+/* eslint-disable new-cap */
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 
@@ -100,7 +101,7 @@ const saveAsPdf = (pageRef, panZoomRef) => {
 
   setTimeout(() => {
     html2canvas(pageRef.current, {
-      scale: 6,
+      scale: 1.1,
       useCORS: true,
       allowTaint: true,
     }).then(canvas => {

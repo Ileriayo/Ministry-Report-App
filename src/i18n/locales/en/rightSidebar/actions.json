@@ -10,8 +10,8 @@
     }
   },
   "printReport": {
-    "heading": "Print / Download PDF",
-    "body": "Click on the appropriate button to either print (<1>Cmd/Ctrl + P</1>) or download your report.",
+    "heading": "Download PDF",
+    "body": "Click on the button below to save a copy of your report.",
     "buttons": {
       "print": "Print",
       "pdf": "PDF"

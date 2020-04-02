@@ -12,6 +12,7 @@ const initialState = {
       heading: 'Profile',
       firstName: '',
       lastName: '',
+      zone: '',
     },
     outreach: {
       enable: false,

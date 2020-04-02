@@ -8,11 +8,9 @@ const Rccreport = () => {
   const { state } = context;
   const { data } = state;
 
-console.log('dataaaa', data.profile);
-
   const Header = () => (
     <div className=" flex flex-col items-center">
-      <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-1xl sm:leading-10 uppercase">
+      <h1 className="mt-10 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-1xl sm:leading-10 uppercase">
         Restplace Christian Centre
       </h1>
       <h1 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-1xl sm:leading-10 uppercase">
@@ -30,7 +28,7 @@ console.log('dataaaa', data.profile);
 
   const IndividualItem = x => (
     <tr>
-        <td className="border border-black text-black px-4 py-2"></td>
+        <td className="border border-black text-black px-4 py-2"/>
         <td className="border border-black text-black px-4 py-2">{x.name}</td>
         <td className="border border-black text-black px-4 py-2">{x.phone}</td>
         <td className="border border-black text-black px-4 py-2">{x.date}</td>
@@ -83,7 +81,7 @@ console.log('dataaaa', data.profile);
   );
 
   return (
-    <div>
+    <div className="m-16">
       <Header />
       <Outreach />
       <Followup />
