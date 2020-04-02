@@ -1,0 +1,14 @@
+{
+  "firstName": {
+    "label": "First Name",
+    "placeholder": "Jane"
+  },
+  "lastName": {
+    "label": "Last Name",
+    "placeholder": "Doe"
+  },
+  "zone": {
+    "label": "Zone",
+    "placeholder": "Surulere"
+  }
+}

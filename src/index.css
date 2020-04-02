@@ -1,0 +1,111 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  color: #2d3748;
+  background-color: #f5f5f5;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+  list-style: disc;
+  margin-left: 1em;
+  padding: 0;
+}
+
+@media screen {
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number']::-webkit-outer-spin-button {
+    appearance: none;
+    margin: 0;
+  }
+
+  input[type='number'] {
+    -moz-appearance: textfield;
+  }
+
+  input:focus {
+    outline: none !important;
+  }
+
+  button:focus {
+    outline: none !important;
+  }
+
+  input:checked + i.material-icons {
+    display: block;
+  }
+
+  #sidebar {
+    top: 0;
+    left: 0;
+    bottom: 0;
+  }
+
+  #tabs {
+    scroll-behavior: smooth;
+  }
+
+  #page {
+    width: 21cm;
+    min-height: 29.7cm;
+    background-color: white;
+  }
+
+  #pageController {
+    bottom: 25px;
+  }
+
+  #pageController > div {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@page {
+  size: A4;
+  margin: 2.5em;
+}
+
+@media print {
+  html,
+  body,
+  body * {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+    visibility: hidden;
+  }
+
+  #page,
+  #page * {
+    visibility: visible;
+  }
+
+  #page {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: white;
+    box-shadow: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}

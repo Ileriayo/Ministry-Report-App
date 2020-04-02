@@ -1,0 +1,15 @@
+{
+  "name": {
+    "label": "Name",
+    "placeholder": "Ileriayo Adebiyi"
+  },
+  "phone": {
+    "label": "Phone Number"
+  },
+  "date": {
+    "label": "04-04-2020"
+  },
+  "remark": {
+    "placeholder": ""
+  }
+}

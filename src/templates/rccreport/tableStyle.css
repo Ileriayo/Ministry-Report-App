@@ -1,0 +1,8 @@
+table {
+  counter-reset: serial-number;
+}
+
+table td:first-child:before {
+  counter-increment: serial-number;
+  content: counter(serial-number)
+}

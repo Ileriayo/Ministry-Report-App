@@ -1,0 +1,12 @@
+{
+  "heading": {
+    "placeholder": "Heading"
+  },
+  "item": {
+    "add": "Add {{- heading}}",
+    "remark": {
+      "label": "Remark"
+    }
+  },
+  "markdownHelpText": "You can use <1>GitHub Flavored Markdown</1> to style this section of the text."
+}

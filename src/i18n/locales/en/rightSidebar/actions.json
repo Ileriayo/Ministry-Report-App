@@ -1,0 +1,34 @@
+{
+  "title": "Actions",
+  "disclaimer": "Changes you make to your report are saved automatically to your browser's local storage, hence your information is completely secure.",
+  "importExport": {
+    "heading": "Import/Export",
+    "body": "You can import or export your data in JSON format. With this, you can edit and print your resume from any device. Save this file for later use.",
+    "buttons": {
+      "import": "Import",
+      "export": "Export"
+    }
+  },
+  "printReport": {
+    "heading": "Print / Download PDF",
+    "body": "Click on the appropriate button to either print (<1>Cmd/Ctrl + P</1>) or download your report.",
+    "buttons": {
+      "print": "Print",
+      "pdf": "PDF"
+    }
+  },
+  "loadDummyData": {
+    "heading": "Load Dummy Data",
+    "body": "Unclear on what to do with a fresh blank page? Load some dummy data with prepopulated values to see how a resume should look and you can start editing from there.",
+    "buttons": {
+      "loadData": "Populate Data"
+    }
+  },
+  "reset": {
+    "heading": "Reset Report!",
+    "body": "Be careful, resetting will remove all the information that you have entered. Click on the button below if you're absolutely sure",
+    "buttons": {
+      "reset": "Reset"
+    }
+  }
+}

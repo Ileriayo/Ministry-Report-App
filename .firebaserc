@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "ministry-report-app"
+  },
+  "targets": {
+    "ministry-report-app": {
+      "hosting": {
+        "app": [
+          "ministry-report-app"
+        ],
+        "docs": [
+          "docs-ministry-report-app"
+        ]
+      }
+    }
+  }
+}

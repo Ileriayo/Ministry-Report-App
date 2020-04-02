@@ -1,0 +1,13 @@
+{
+  "name": "Ministry Report",
+  "description": "Ministry report builder for Restplace Christian Centre",
+  "website": "",
+  "repository": "https://github.com/ileriayo",
+  "logo": "",
+  "buildpacks": [
+    {
+      "url": "mars/create-react-app"
+    }
+  ],
+  "keywords": ["react", "report", "reporting", "static"]
+}

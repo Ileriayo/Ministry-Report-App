@@ -1,0 +1,34 @@
+{
+  "title": "About",
+  "documentation": {
+    "heading": "Documentation",
+    "body": "Want to know more about the app? Wouldn't it be nice if there was a guide to setting it up on your local machine? Need information on how to contribute to the project? Look no further, there's comprehensive documentation made just for you.",
+    "buttons": {
+      "documentation": "Documentation"
+    }
+  },
+  "bugOrFeatureRequest": {
+    "heading": "Bugs? More Features?",
+    "body": "Is something not working properly and is hindering you from completing your report or you would like me to extend the current features? Send me an email.",
+    "buttons": {
+      "sendEmail": "Send an Email"
+    }
+  },
+  "sourceCode": {
+    "heading": "Source Code",
+    "body": "Want to run the project from its source? Are you a developer willing to contribute to the open-source development of this project? Click the button below.",
+    "buttons": {
+      "githubRepo": "GitHub Repo"
+    }
+  },
+  "license": {
+    "heading": "License Information",
+    "body": "The project is governed under the MIT License.",
+    "buttons": {
+      "mitLicense": "MIT License"
+    }
+  },
+  "footer": {
+    "credit": "Reactive Resume is a project by <1>Ileriayo Adebiyi</1>."
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "name": {
+    "label": "Name",
+    "placeholder": "Ileriayo Adebiyi"
+  },
+  "phone": {
+    "label": "Phone Number",
+    "placeholder": "08123456789"
+  },
+  "date": {
+    "label": "Date",
+    "placeholder": "04-04-2020"
+  },
+  "remark": {
+    "placeholder": "Some information is required."
+  }
+}
