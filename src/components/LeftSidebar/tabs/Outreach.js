@@ -38,7 +38,7 @@ const OutreachTab = ({ data, onChange }) => {
   return (
     'outreach' in data && (
       <>
-        <div className="mb-6 grid grid-cols-6 items-center">
+        <div className="mb-6 grid grid-cols-6 items-center sm:px-64 md:p-0">
           <div className="col-span-1">
             <Checkbox
               checked={data.outreach.enable}
@@ -54,7 +54,7 @@ const OutreachTab = ({ data, onChange }) => {
           </div>
         </div>
 
-        <hr className="my-6" />
+        <hr className="my-6 sm:mx-64 md:mx-0" />
 
         {data.outreach.items.map((x, index) => (
           <Item
@@ -146,7 +146,7 @@ const AddItem = ({ heading, dispatch }) => {
   };
 
   return (
-    <div className="my-4 border border-gray-200 rounded p-5">
+    <div className="my-4 p-5 border border-gray-200 rounded">
       <ItemHeading heading={heading} setOpen={setOpen} isOpen={isOpen} />
 
       <div className={`mt-6 ${isOpen ? 'block' : 'hidden'}`}>

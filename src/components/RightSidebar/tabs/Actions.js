@@ -18,10 +18,34 @@ const ActionsTab = ({ dispatch }) => {
   return (
     <div>
       <div className="shadow text-center p-5">
-        <h6 className="font-bold text-sm mb-2">{t('actions.printReport.heading')}</h6>
+        <h6 className="font-bold text-sm mb-2">{t('actions.emailReport.heading')}</h6>
 
         <div className="text-sm">
-          <Trans t={t} i18nKey="actions.printReport.body" />
+          <Trans t={t} i18nKey="actions.emailReport.body" />
+        </div>
+
+        <div className="grid grid-cols-1">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:martinsawe@gmail.com?subject=Ministry Report App"
+            className="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded"
+          >
+            <div className="flex justify-center items-center">
+              <i className="material-icons mr-2 font-bold text-base">email</i>
+              <span className="text-sm">{t('actions.emailReport.buttons.send')}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      
+      <hr className="my-6" />
+      
+      <div className="shadow text-center p-5">
+        <h6 className="font-bold text-sm mb-2">{t('actions.downloadPDF.heading')}</h6>
+
+        <div className="text-sm">
+          <Trans t={t} i18nKey="actions.downloadPDF.body" />
         </div>
 
         <button
@@ -31,7 +55,7 @@ const ActionsTab = ({ dispatch }) => {
         >
           <div className="flex justify-center items-center">
             <i className="material-icons mr-2 font-bold text-base">save</i>
-            <span className="text-sm">{t('actions.printReport.buttons.pdf')}</span>
+            <span className="text-sm">{t('actions.downloadPDF.buttons.pdf')}</span>
           </div>
         </button>
       </div>

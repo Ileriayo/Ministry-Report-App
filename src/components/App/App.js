@@ -39,7 +39,7 @@ const App = () => {
 
   return (
     <Suspense fallback="Loading...">
-      <div className="h-screen grid grid-cols-5 items-center">
+      <div className="h-screen md:grid lg:grid-cols-5 items-center">
         <LeftSidebar />
 
         <div className="relative z-0 h-screen overflow-hidden col-span-3 flex justify-center items-center">

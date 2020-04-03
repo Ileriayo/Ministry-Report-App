@@ -37,48 +37,54 @@ const Rccreport = () => {
   );
 
   const Outreach = () => (
-    <div className="my-8">
-      <h1 className="text-3xl font-semibold text-gray-900 sm:text-1xl">
-        OUTREACH
-      </h1>
-      <table className="table-fixed">
-  <thead>
-    <tr>
-      <th className="border border-black text-black px-4 py-2">S/N</th>
-      <th className="border border-black text-black px-4 py-2">NAME</th>
-      <th className="border border-black text-black px-4 py-2">CONTACT NUMBER</th>
-      <th className="border border-black text-black px-12 py-2">DATE</th>
-      <th className="border border-black text-black px-4 py-2">REMARK</th>
-    </tr>
-  </thead>
-  <tbody>
-      {data.outreach.items.filter(x => x.enable).map(IndividualItem)}
-  </tbody>
-</table>
-    </div>
+    data.outreach &&
+    data.outreach.enable && (
+      <div className="my-8">
+        <h1 className="text-3xl font-semibold text-gray-900 sm:text-1xl uppercase">
+        {data.outreach.heading}
+        </h1>
+        <table className="table-fixed">
+          <thead>
+            <tr>
+              <th className="border border-black text-black px-4 py-2">S/N</th>
+              <th className="border border-black text-black px-4 py-2">NAME</th>
+              <th className="border border-black text-black px-4 py-2">CONTACT NUMBER</th>
+              <th className="border border-black text-black px-12 py-2">DATE</th>
+              <th className="border border-black text-black px-4 py-2">REMARK</th>
+            </tr>
+          </thead>
+          <tbody>
+              {data.outreach.items.filter(x => x.enable).map(IndividualItem)}
+          </tbody>
+        </table>
+      </div>
+    )
   );
 
   const Followup = () => (
-    <div className="my-8">
-      <h1 className="text-3xl font-semibold text-gray-900 sm:text-1xl">
-        FOLLOW-UP
-      </h1>
-      <table className="table-fixed">
-  <thead>
-    <tr>
-      <th className="border border-black text-black px-4 py-2">S/N</th>
-      <th className="border border-black text-black px-4 py-2">NAME</th>
-      <th className="border border-black text-black px-4 py-2">CONTACT NUMBER</th>
-      <th className="border border-black text-black px-12 py-2">DATE</th>
-      <th className="border border-black text-black px-4 py-2">REMARK</th>
-    </tr>
-  </thead>
-  <tbody>
-      {data.followup.items.filter(x => x.enable).map(IndividualItem)}
-  </tbody>
-</table>
-    </div>
-  );
+    data.followup &&
+    data.followup.enable && (
+      <div className="my-8">
+        <h1 className="text-3xl font-semibold text-gray-900 sm:text-1xl uppercase">
+          {data.followup.heading}
+        </h1>
+        <table className="table-fixed">
+          <thead>
+            <tr>
+              <th className="border border-black text-black px-4 py-2">S/N</th>
+              <th className="border border-black text-black px-4 py-2">NAME</th>
+              <th className="border border-black text-black px-4 py-2">CONTACT NUMBER</th>
+              <th className="border border-black text-black px-12 py-2">DATE</th>
+              <th className="border border-black text-black px-4 py-2">REMARK</th>
+            </tr>
+          </thead>
+          <tbody>
+              {data.followup.items.filter(x => x.enable).map(IndividualItem)}
+          </tbody>
+        </table>
+      </div>
+    )
+);
 
   return (
     <div className="m-16">

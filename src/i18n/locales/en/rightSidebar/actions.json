@@ -9,24 +9,23 @@
       "export": "Export"
     }
   },
-  "printReport": {
+  "emailReport": {
+    "heading": "Send To Pastor",
+    "body": "After clicking on this link, ensure you copy the necessary persons manually.",
+    "buttons": {
+      "send": "Email Pastor"
+    }
+  },
+  "downloadPDF": {
     "heading": "Download PDF",
     "body": "Click on the button below to save a copy of your report.",
     "buttons": {
-      "print": "Print",
       "pdf": "PDF"
-    }
-  },
-  "loadDummyData": {
-    "heading": "Load Dummy Data",
-    "body": "Unclear on what to do with a fresh blank page? Load some dummy data with prepopulated values to see how a resume should look and you can start editing from there.",
-    "buttons": {
-      "loadData": "Populate Data"
     }
   },
   "reset": {
     "heading": "Reset Report!",
-    "body": "Be careful, resetting will remove all the information that you have entered. Click on the button below if you're absolutely sure",
+    "body": "Be careful, resetting will remove all the information that you have entered. Click on the button below if you're absolutely sure.",
     "buttons": {
       "reset": "Reset"
     }

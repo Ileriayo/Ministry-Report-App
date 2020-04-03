@@ -1,15 +1,15 @@
 {
   "projects": {
-    "default": "minreportrcc"
+    "default": "myrccreport"
   },
   "targets": {
-    "minreportrcc": {
+    "myrccreport": {
       "hosting": {
         "app": [
-          "minreportrcc"
+          "myrccreport"
         ],
         "docs": [
-          "docs-minreportrcc"
+          "docs-myrccreport"
         ]
       }
     }

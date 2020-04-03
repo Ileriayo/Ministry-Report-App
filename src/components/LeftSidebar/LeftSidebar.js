@@ -45,7 +45,7 @@ const LeftSidebar = () => {
   return (
     <div
       id="leftSidebar"
-      className="animated slideInLeft z-10 py-6 h-screen bg-white col-span-1 shadow-2xl overflow-y-scroll"
+      className="animated slideInLeft z-10 py-6 md:h-screen bg-white col-span-1 shadow-2xl overflow-y-scroll"
     >
       <TabBar tabs={tabs} currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <div className="px-6">{renderTabs()}</div>

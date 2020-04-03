@@ -11,6 +11,7 @@
 
 # firebase
 .firebase
+firebase-debug.log
 
 # tailwind
 tailwind.css

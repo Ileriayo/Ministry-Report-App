@@ -17,9 +17,9 @@ const TabBar = ({ tabs, currentTab, setCurrentTab }) => {
   };
 
   return (
-    <div className="mx-4 mb-6 flex items-center">
+    <div className="mx-4 mb-6 flex items-center justify-center">
       <div
-        className="flex mr-1 cursor-pointer select-none text-gray-600 hover:text-gray-800"
+        className="hidden md:block flex mr-1 cursor-pointer select-none text-gray-600 hover:text-gray-800"
         onClick={() => scrollBy(-100)}
       >
         <i className="material-icons">chevron_left</i>
@@ -47,7 +47,7 @@ const TabBar = ({ tabs, currentTab, setCurrentTab }) => {
       </ul>
 
       <div
-        className="flex ml-1 cursor-pointer select-none text-gray-600 hover:text-gray-800"
+        className="hidden md:block flex ml-1 cursor-pointer select-none text-gray-600 hover:text-gray-800"
         onClick={() => scrollBy(100)}
       >
         <i className="material-icons">chevron_right</i>
