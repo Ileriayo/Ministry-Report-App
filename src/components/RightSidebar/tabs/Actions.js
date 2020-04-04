@@ -18,9 +18,9 @@ const ActionsTab = ({ dispatch }) => {
   return (
     <div>
       <div className="shadow text-center p-5">
-        <h6 className="font-bold text-sm mb-2">{t('actions.emailReport.heading')}</h6>
+        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.emailReport.heading')}</h1>
 
-        <div className="text-sm">
+        <div className="xs:text-5xl lg:text-sm">
           <Trans t={t} i18nKey="actions.emailReport.body" />
         </div>
 
@@ -29,11 +29,11 @@ const ActionsTab = ({ dispatch }) => {
             target="_blank"
             rel="noopener noreferrer"
             href="mailto:martinsawe@gmail.com?subject=Ministry Report App"
-            className="mt-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded"
+            className="mt-4 mx-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded"
           >
             <div className="flex justify-center items-center">
-              <i className="material-icons mr-2 font-bold text-base">email</i>
-              <span className="text-sm">{t('actions.emailReport.buttons.send')}</span>
+              <i className="material-icons mr-2 font-bold xs:text-3xl lg:text-base">email</i>
+              <span className="xs:text-5xl lg:text-sm">{t('actions.emailReport.buttons.send')}</span>
             </div>
           </a>
         </div>
@@ -42,9 +42,9 @@ const ActionsTab = ({ dispatch }) => {
       <hr className="my-6" />
       
       <div className="shadow text-center p-5">
-        <h6 className="font-bold text-sm mb-2">{t('actions.downloadPDF.heading')}</h6>
+        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.downloadPDF.heading')}</h1>
 
-        <div className="text-sm">
+        <div className="xs:text-5xl lg:text-sm">
           <Trans t={t} i18nKey="actions.downloadPDF.body" />
         </div>
 
@@ -55,21 +55,21 @@ const ActionsTab = ({ dispatch }) => {
         >
           <div className="flex justify-center items-center">
             <i className="material-icons mr-2 font-bold text-base">save</i>
-            <span className="text-sm">{t('actions.downloadPDF.buttons.pdf')}</span>
+            <span className="xs:text-5xl lg:text-sm">{t('actions.downloadPDF.buttons.pdf')}</span>
           </div>
         </button>
       </div>
       
       <hr className="my-6" />
 
-      <div className="shadow text-center text-sm p-5">{t('actions.disclaimer')}</div>
+      <div className="shadow text-center xs:text-5xl lg:text-sm p-5">{t('actions.disclaimer')}</div>
 
       <hr className="my-6" />
 
       <div className="shadow text-center p-5">
-        <h6 className="font-bold text-sm mb-2">{t('actions.reset.heading')}</h6>
+        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.reset.heading')}</h1>
 
-        <div className="text-sm">{t('actions.reset.body')}</div>
+        <div className=" xs:text-5xl lg:text-sm">{t('actions.reset.body')}</div>
 
         <button
           type="button"
@@ -78,7 +78,7 @@ const ActionsTab = ({ dispatch }) => {
         >
           <div className="flex justify-center items-center">
             <i className="material-icons mr-2 font-bold text-base">refresh</i>
-            <span className="text-sm">{t('actions.reset.buttons.reset')}</span>
+            <span className="xs:text-5xl lg:text-sm">{t('actions.reset.buttons.reset')}</span>
           </div>
         </button>
       </div>

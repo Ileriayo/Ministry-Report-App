@@ -18,11 +18,11 @@ const ItemActions = ({ dispatch, first, identifier, item, last, onChange, type }
         <button
           type="button"
           onClick={() => deleteItem(dispatch, type, item)}
-          className="ml-2 bg-red-600 hover:bg-red-700 text-white text-sm font-medium py-2 px-5 rounded"
+          className="ml-2 bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-5 rounded"
         >
           <div className="flex items-center">
             <i className="material-icons mr-2 font-bold text-base">delete</i>
-            <span className="text-sm">Delete</span>
+            <span className="xs:text-5xl lg:text-xs">Delete</span>
           </div>
         </button>
       </div>
@@ -32,10 +32,10 @@ const ItemActions = ({ dispatch, first, identifier, item, last, onChange, type }
           <button
             type="button"
             onClick={() => moveItemUp(dispatch, type, item)}
-            className="bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium py-2 px-4 rounded mr-2"
+            className="bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium py-2 px-5 rounded mr-2"
           >
             <div className="flex items-center">
-              <i className="material-icons font-bold text-base">arrow_upward</i>
+              <i className="material-icons font-bold xs:text-xl lg:text-base">arrow_upward</i>
             </div>
           </button>
         )}
@@ -44,10 +44,10 @@ const ItemActions = ({ dispatch, first, identifier, item, last, onChange, type }
           <button
             type="button"
             onClick={() => moveItemDown(dispatch, type, item)}
-            className="bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium py-2 px-4 rounded"
+            className="bg-gray-600 hover:bg-gray-700 text-white text-sm font-medium py-2 px-5 rounded mr-2"
           >
             <div className="flex items-center">
-              <i className="material-icons font-bold text-base">arrow_downward</i>
+              <i className="material-icons font-bold xs:text-xl lg:text-base">arrow_downward</i>
             </div>
           </button>
         )}

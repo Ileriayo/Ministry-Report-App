@@ -39,7 +39,7 @@ const RightSidebar = () => {
   return (
     <div
       id="rightSidebar"
-      className="animated slideInRight z-10 py-6 h-screen bg-white col-span-1 shadow-2xl overflow-y-scroll"
+      className="animated slideInRight z-10 py-6 md:h-screen lg:mx-0 bg-white col-span-1 shadow-2xl overflow-y-scroll"
     >
       <TabBar tabs={tabs} currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <div className="px-6">{renderTabs()}</div>

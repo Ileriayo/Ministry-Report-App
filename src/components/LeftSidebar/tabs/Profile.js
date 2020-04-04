@@ -8,8 +8,8 @@ const ProfileTab = ({ data, onChange }) => {
 
   return (
     <div className="flex justify-center">
-      <div className="w-64">
-        <p className="text-center">Enter your infromation</p>
+      <div className="">
+        <p className="text-center xs:text-5xl lg:text-sm">Enter your infromation</p>
         <hr className="my-6"/>
         <TextField
           className="mb-6"

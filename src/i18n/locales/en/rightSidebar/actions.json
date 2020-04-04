@@ -11,7 +11,7 @@
   },
   "emailReport": {
     "heading": "Send To Pastor",
-    "body": "After clicking on this link, ensure you copy the necessary persons manually.",
+    "body": "After clicking this link, ensure you copy the necessary persons manually.",
     "buttons": {
       "send": "Email Pastor"
     }

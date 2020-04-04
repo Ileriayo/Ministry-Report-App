@@ -2,7 +2,7 @@ import React from 'react';
 
 const AddItemButton = ({ onSubmit }) => {
   return (
-    <div>
+    <div className="text-center">
       <button
         type="button"
         onClick={onSubmit}
@@ -10,7 +10,7 @@ const AddItemButton = ({ onSubmit }) => {
       >
         <div className="flex items-center">
           <i className="material-icons mr-2 font-bold text-base">add</i>
-          <span className="text-sm">Add</span>
+          <span className="xs:text-4xl lg:text-sm">Add</span>
         </div>
       </button>
     </div>

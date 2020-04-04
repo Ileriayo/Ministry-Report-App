@@ -61,7 +61,7 @@ ul li {
     bottom: 0;
   }
 
-  #tabs {
+  .tabs {
     scroll-behavior: smooth;
   }
 
