@@ -3,7 +3,7 @@ module.exports = {
   description:
     "",
   themeConfig: {
-    logo: '/logo.png',
+    logo: '',
     repo: '',
     nav: [
       { text: 'Home', link: '/' },
@@ -19,7 +19,7 @@ module.exports = {
     [
       '@vuepress/google-analytics',
       {
-        ga: 'UA-161860275-1',
+        ga: '',
       },
     ],
   ],
