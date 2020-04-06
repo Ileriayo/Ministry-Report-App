@@ -1,7 +1,3 @@
----
-title: Changelog
----
-
 # Changelog
 
 ### March 31 - April 5, 2020
