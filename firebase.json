@@ -6,6 +6,9 @@
       "ignore": [
         "firebase.json",
         "docs",
+        "Changelog",
+        "public",
+        "src",
         "**/.*",
         "**/node_modules/**"
       ],
@@ -21,6 +24,9 @@
       "public": "docs/.vuepress/dist",
       "ignore": [
         "firebase.json",
+        "Changelog",
+        "public",
+        "src",
         "**/.*",
         "**/node_modules/**"
       ],
