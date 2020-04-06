@@ -13,7 +13,6 @@ import ItemHeading from '../../../shared/ItemHeading';
 import AddItemButton from '../../../shared/AddItemButton';
 
 const FollowupTab = ({ data, onChange }) => {
-  const { t } = useTranslation();
   const context = useContext(AppContext);
   const { dispatch } = context;
 
@@ -38,20 +37,14 @@ const FollowupTab = ({ data, onChange }) => {
   return (
     'followup' in data && (
       <>
-        <div className="mb-6 grid grid-cols-6 items-center">
-          <div className="col-span-1">
+        <div className="mb-6">
+          <label className="flex items-center content-center justify-center">
             <Checkbox
               checked={data.followup.enable}
               onChange={v => onChange('data.followup.enable', v)}
             />
-          </div>
-          <div className="col-span-5">
-            <TextField
-              placeholder={t('heading.placeholder')}
-              value={data.followup.heading}
-              onChange={v => onChange('data.followup.heading', v)}
-            />
-          </div>
+            <span className="xs:text-4xl lg:text-sm">Include In Report</span>
+            </label>
         </div>
 
         <hr className="my-6" />

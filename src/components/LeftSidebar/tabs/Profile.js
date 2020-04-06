@@ -7,31 +7,33 @@ const ProfileTab = ({ data, onChange }) => {
   const { t } = useTranslation('leftSidebar');
 
   return (
-    <div className="flex justify-center">
-      <div className="">
-        <p className="text-center xs:text-5xl lg:text-sm">Enter your infromation</p>
-        <hr className="my-6"/>
-        <TextField
-          className="mb-6"
-          label={t('profile.firstName.label')}
-          placeholder={t('profile.firstName.placeholder')}
-          value={data.profile.firstName}
-          onChange={v => onChange('data.profile.firstName', v)}
-        />
-        <TextField
-          className="mb-6"
-          label={t('profile.lastName.label')}
-          placeholder={t('profile.lastName.placeholder')}
-          value={data.profile.lastName}
-          onChange={v => onChange('data.profile.lastName', v)}
-        />
-        <TextField
-          className="mb-6"
-          label={t('profile.zone.label')}
-          placeholder={t('profile.zone.placeholder')}
-          value={data.profile.zone}
-          onChange={v => onChange('data.profile.zone', v)}
-        />
+    <div>
+      <div>
+        <p className="text-center xs:text-6xl xs:font-bold lg:font-normal lg:text-4xl">Enter Your Infromation</p>
+        <div className="xs:mx-16 lg:mx-40">
+          <hr className="my-6"/>
+          <TextField
+            className="xs:mb-20 lg:mb-6"
+            label={t('profile.firstName.label')}
+            placeholder={t('profile.firstName.placeholder')}
+            value={data.profile.firstName}
+            onChange={v => onChange('data.profile.firstName', v)}
+          />
+          <TextField
+            className="xs:mb-20 lg:mb-6"
+            label={t('profile.lastName.label')}
+            placeholder={t('profile.lastName.placeholder')}
+            value={data.profile.lastName}
+            onChange={v => onChange('data.profile.lastName', v)}
+          />
+          <TextField
+            className="xs:mb-20 lg:mb-6"
+            label={t('profile.zone.label')}
+            placeholder={t('profile.zone.placeholder')}
+            value={data.profile.zone}
+            onChange={v => onChange('data.profile.zone', v)}
+          />
+        </div>
       </div>
     </div>
   );

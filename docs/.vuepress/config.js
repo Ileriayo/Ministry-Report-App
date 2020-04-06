@@ -1,23 +1,16 @@
 module.exports = {
-  title: 'Reactive Resume',
+  title: '',
   description:
-    "A one-of-a-kind resume builder that's not out to get your data. Completely secure, customizable, portable, open-source and free forever.",
+    "",
   themeConfig: {
     logo: '/logo.png',
-    repo: 'AmruthPillai/Reactive-Resume',
+    repo: '',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Go to App', link: 'https://rxresu.me/' },
+      { text: 'Go to App', link: '' },
     ],
     sidebar: [
       '/',
-      '/features/',
-      '/templates/',
-      '/technology/',
-      '/contributing/',
-      '/translation/',
-      '/building-from-source/',
-      '/deployment/',
       '/changelog/',
     ],
     smoothScroll: true,

@@ -13,7 +13,6 @@ import ItemHeading from '../../../shared/ItemHeading';
 import AddItemButton from '../../../shared/AddItemButton';
 
 const OutreachTab = ({ data, onChange }) => {
-  const { t } = useTranslation();
   const context = useContext(AppContext);
   const { dispatch } = context;
 
@@ -38,23 +37,17 @@ const OutreachTab = ({ data, onChange }) => {
   return (
     'outreach' in data && (
       <>
-        <div className="mb-6 grid grid-cols-6 items-center sm:px-64 md:p-0">
-          <div className="col-span-1">
+        <div className="mb-6">
+          <label className="flex items-center content-center justify-center">
             <Checkbox
               checked={data.outreach.enable}
               onChange={v => onChange('data.outreach.enable', v)}
             />
-          </div>
-          <div className="col-span-5">
-            <TextField
-              placeholder={t('heading.placeholder')}
-              value={data.outreach.heading}
-              onChange={v => onChange('data.outreach.heading', v)}
-            />
-          </div>
+            <span className="xs:text-4xl lg:text-sm">Include In Report</span>
+          </label>
         </div>
 
-        <hr className="my-6 sm:mx-64 md:mx-0" />
+        <hr className="my-6" />
 
         {data.outreach.items.map((x, index) => (
           <Item

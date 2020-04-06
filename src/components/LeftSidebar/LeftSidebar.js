@@ -1,20 +1,26 @@
 import React, { useState, useContext } from 'react';
+import { useTranslation } from 'react-i18next';
 
 import AppContext from '../../context/AppContext';
 import TabBar from '../../shared/TabBar';
 import OutreachTab from './tabs/Outreach';
 import FollowupTab from './tabs/Followup';
 import ProfileTab from './tabs/Profile';
+import ActionsTab from '../RightSidebar/tabs/Actions';
+import AboutTab from '../RightSidebar/tabs/About';
 
 const LeftSidebar = () => {
+  const { t } = useTranslation('rightSidebar');
   const context = useContext(AppContext);
   const { state, dispatch } = context;
-  const { data } = state;
+  const { data, theme } = state;
 
   const tabs = [
     { key: 'profile', name: data.profile.heading },
     { key: 'outreach', name: data.outreach.heading },
     { key: 'followup', name: data.followup.heading },
+    { key: 'actions', name: t('actions.title') },
+    { key: 'about', name: t('about.title') },
   ];
   const [currentTab, setCurrentTab] = useState(tabs[0].key);
   const onChange = (key, value) => {
@@ -37,6 +43,10 @@ const LeftSidebar = () => {
         return <OutreachTab data={data} onChange={onChange} />;
       case tabs[2].key:
         return <FollowupTab data={data} onChange={onChange} />;
+      case tabs[3].key:
+        return <ActionsTab data={data} theme={theme} dispatch={dispatch} />;
+      case tabs[4].key:
+        return <AboutTab />;
       default:
         return null;
     }

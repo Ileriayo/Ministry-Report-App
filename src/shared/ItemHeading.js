@@ -12,7 +12,7 @@ const ItemHeading = ({ title, heading, isOpen, setOpen }) => {
       <h6 className="xs:text-3xl lg:text-sm font-medium">
         {typeof heading === 'undefined' ? title : t('item.add', { heading })}
       </h6>
-      <i className="material-icons">{isOpen ? 'expand_less' : 'expand_more'}</i>
+      <i className="material-icons xs:text-4xl lg:text-sm">{isOpen ? 'expand_less' : 'expand_more'}</i>
     </div>
   );
 };

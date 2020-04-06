@@ -9,9 +9,9 @@ const AboutTab = () => {
       <hr className="my-5" />
 
       <div className="shadow text-center p-5">
-        <h1 className="font-bold text-6xl lg:text-sm mb-2">{t('about.bugOrFeatureRequest.heading')}</h1>
+        <h1 className="font-bold text-6xl lg:text-2xl mb-2">{t('about.bugOrFeatureRequest.heading')}</h1>
 
-        <div className=" text-5xl lg:text-sm">{t('about.bugOrFeatureRequest.body')}</div>
+        <div className=" text-5xl lg:text-xl">{t('about.bugOrFeatureRequest.body')}</div>
 
         <div className="grid grid-cols-1">
           <a
@@ -31,9 +31,9 @@ const AboutTab = () => {
       <hr className="my-5" />
 
       <div className="shadow text-center p-5">
-        <h1 className="font-bold text-6xl lg:text-sm mb-2">{t('about.license.heading')}</h1>
+        <h1 className="font-bold text-6xl lg:text-2xl mb-2">{t('about.license.heading')}</h1>
 
-        <div className=" text-5xl lg:text-sm">{t('about.license.body')}</div>
+        <div className=" text-5xl lg:text-xl">{t('about.license.body')}</div>
 
         <div className="grid grid-cols-1">
           <a

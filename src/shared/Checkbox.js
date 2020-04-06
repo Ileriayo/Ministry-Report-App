@@ -1,15 +1,13 @@
 import React from 'react';
 
-const Checkbox = ({ checked, onChange, icon = 'check', size = '2rem' }) => {
+const Checkbox = ({ checked, onChange, icon = 'check' }) => {
   return (
     <div
-      className="bg-white border-2 rounded border-gray-400 hover:border-gray-500 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500 cursor-pointer"
-      style={{ width: size, height: size }}
+      className="xs:w-16 xs:h-16 lg:w-10 lg:h-10 bg-white border-2 rounded border-gray-400 hover:border-gray-500 flex flex-shrink-0 justify-center items-center mr-2 focus-within:border-blue-500 cursor-pointer"
     >
       <input
         type="checkbox"
-        style={{ width: size, height: size }}
-        className="opacity-0 absolute cursor-pointer"
+        className="xs:w-16 xs:h-16 lg:w-10 lg:h-10 opacity-0 absolute cursor-pointer"
         checked={checked}
         onChange={e => onChange(e.target.checked)}
       />

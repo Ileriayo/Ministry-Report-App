@@ -6,7 +6,7 @@ import AppContext from '../../context/AppContext';
 import PageContext from '../../context/PageContext';
 
 import LeftSidebar from '../LeftSidebar/LeftSidebar';
-import RightSidebar from '../RightSidebar/RightSidebar';
+// import RightSidebar from '../RightSidebar/RightSidebar';
 
 import templates from '../../templates';
 import PageController from '../../shared/PageController';
@@ -39,10 +39,10 @@ const App = () => {
 
   return (
     <Suspense fallback="Loading...">
-      <div className="xl:h-screen grid grid md:grid-cols-1 lg:grid-cols-5 items-center">
+      <div className="grid grid grid-cols-1 grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 xs:grid-flow-col lg:grid-flow-row">
         <LeftSidebar />
 
-        <div className="relative z-0 h-screen overflow-hidden col-span-3 flex justify-center items-center">
+        <div className="relative z-0 h-screen overflow-hidden col-span-1 flex justify-center items-center">
           <PanZoom
             ref={panZoomRef}
             minZoom="0.6"
@@ -61,7 +61,6 @@ const App = () => {
           <PageController />
         </div>
 
-        <RightSidebar />
       </div>
     </Suspense>
   );

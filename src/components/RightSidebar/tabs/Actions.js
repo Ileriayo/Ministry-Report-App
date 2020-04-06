@@ -18,9 +18,9 @@ const ActionsTab = ({ dispatch }) => {
   return (
     <div>
       <div className="shadow text-center p-5">
-        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.emailReport.heading')}</h1>
+        <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.emailReport.heading')}</h1>
 
-        <div className="xs:text-5xl lg:text-sm">
+        <div className="xs:text-5xl lg:text-xl">
           <Trans t={t} i18nKey="actions.emailReport.body" />
         </div>
 
@@ -42,9 +42,9 @@ const ActionsTab = ({ dispatch }) => {
       <hr className="my-6" />
       
       <div className="shadow text-center p-5">
-        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.downloadPDF.heading')}</h1>
+        <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.downloadPDF.heading')}</h1>
 
-        <div className="xs:text-5xl lg:text-sm">
+        <div className="xs:text-5xl lg:text-xl">
           <Trans t={t} i18nKey="actions.downloadPDF.body" />
         </div>
 
@@ -62,14 +62,14 @@ const ActionsTab = ({ dispatch }) => {
       
       <hr className="my-6" />
 
-      <div className="shadow text-center xs:text-5xl lg:text-sm p-5">{t('actions.disclaimer')}</div>
+      <div className="shadow text-center xs:text-5xl lg:text-xl p-5">{t('actions.disclaimer')}</div>
 
       <hr className="my-6" />
 
       <div className="shadow text-center p-5">
-        <h1 className="font-bold xs:text-6xl lg:text-sm mb-2">{t('actions.reset.heading')}</h1>
+        <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.reset.heading')}</h1>
 
-        <div className=" xs:text-5xl lg:text-sm">{t('actions.reset.body')}</div>
+        <div className=" xs:text-5xl lg:text-xl">{t('actions.reset.body')}</div>
 
         <button
           type="button"
