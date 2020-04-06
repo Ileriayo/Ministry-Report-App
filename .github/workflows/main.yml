@@ -8,11 +8,11 @@ on:
 
 jobs:
   build:
-    name: Build & Deploy
+    name: Build & Deploy To Firebase
     runs-on: ubuntu-latest
     steps:
       - name: Checkout GitHub Repository
-        uses: actions/checkout@v2.0.0
+        uses: actions/checkout@master
       - name: Install Project Dependencies
         run: npm install
       - name: Build App
@@ -20,7 +20,7 @@ jobs:
       - name: Build Documentation
         run: npm run docs:build
       - name: Deploy to Firebase Hosting
-        uses: w9jds/firebase-action@v1.3.0
+        uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
