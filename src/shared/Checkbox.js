@@ -11,7 +11,7 @@ const Checkbox = ({ checked, onChange, icon = 'check' }) => {
         checked={checked}
         onChange={e => onChange(e.target.checked)}
       />
-      <i className="material-icons fill-current hidden text-sm font-bold text-gray-800 cursor-pointer">
+      <i className="material-icons fill-current hidden xs:text-5xl lg:text-2xl font-bold text-gray-800 cursor-pointer">
         {icon}
       </i>
     </div>

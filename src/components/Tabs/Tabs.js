@@ -3,11 +3,11 @@ import { useTranslation } from 'react-i18next';
 
 import AppContext from '../../context/AppContext';
 import TabBar from '../../shared/TabBar';
-import OutreachTab from './tabs/Outreach';
-import FollowupTab from './tabs/Followup';
-import ProfileTab from './tabs/Profile';
-import ActionsTab from '../RightSidebar/tabs/Actions';
-import AboutTab from '../RightSidebar/tabs/About';
+import OutreachTab from './Outreach';
+import FollowupTab from './Followup';
+import ProfileTab from './Profile';
+import ActionsTab from './Actions';
+import AboutTab from './About';
 
 const LeftSidebar = () => {
   const { t } = useTranslation('rightSidebar');
@@ -55,7 +55,7 @@ const LeftSidebar = () => {
   return (
     <div
       id="leftSidebar"
-      className="animated slideInLeft z-10 py-6 md:h-screen bg-white col-span-1 shadow-2xl overflow-y-scroll"
+      className="z-10 py-6 md:h-screen bg-white col-span-1 shadow-2xl overflow-y-scroll"
     >
       <TabBar tabs={tabs} currentTab={currentTab} setCurrentTab={setCurrentTab} />
       <div className="px-6">{renderTabs()}</div>

@@ -1,9 +1,9 @@
 /* eslint-disable no-alert */
-import React, { useContext /* , { useRef */ } from 'react';
+import React, { useContext } from 'react';
 import { useTranslation, Trans } from 'react-i18next';
 
-import PageContext from '../../../context/PageContext';
-import { saveAsPdf } from '../../../utils';
+import PageContext from '../../context/PageContext';
+import { saveAsPdf } from '../../utils';
 
 const ActionsTab = ({ dispatch }) => {
   const pageContext = useContext(PageContext);
@@ -17,30 +17,6 @@ const ActionsTab = ({ dispatch }) => {
 
   return (
     <div>
-      <div className="shadow text-center p-5">
-        <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.emailReport.heading')}</h1>
-
-        <div className="xs:text-5xl lg:text-xl">
-          <Trans t={t} i18nKey="actions.emailReport.body" />
-        </div>
-
-        <div className="grid grid-cols-1">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="mailto:martinsawe@gmail.com?subject=Ministry Report App"
-            className="mt-4 mx-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded"
-          >
-            <div className="flex justify-center items-center">
-              <i className="material-icons mr-2 font-bold xs:text-3xl lg:text-base">email</i>
-              <span className="xs:text-5xl lg:text-sm">{t('actions.emailReport.buttons.send')}</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      
-      <hr className="my-6" />
-      
       <div className="shadow text-center p-5">
         <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.downloadPDF.heading')}</h1>
 
@@ -61,9 +37,33 @@ const ActionsTab = ({ dispatch }) => {
       </div>
       
       <hr className="my-6" />
+      
+      <div className="shadow text-center p-5">
+        <h1 className="font-bold xs:text-6xl lg:text-2xl mb-2">{t('actions.emailReport.heading')}</h1>
 
-      <div className="shadow text-center xs:text-5xl lg:text-xl p-5">{t('actions.disclaimer')}</div>
+        <div className="xs:text-5xl lg:text-xl">
+          <Trans t={t} i18nKey="actions.emailReport.body" />
+        </div>
 
+        <p className="mt-3 text-red-600 xs:text-3xl lg:text-sm">
+          {t('actions.emailReport.notice')}
+        </p>
+
+        <div className="grid grid-cols-1">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="mailto:martinsawe@gmail.com?subject=Ministry Report App"
+            className="mt-4 mx-auto bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-5 rounded"
+          >
+            <div className="flex justify-center items-center">
+              <i className="material-icons mr-2 font-bold xs:text-3xl lg:text-base">email</i>
+              <span className="xs:text-5xl lg:text-sm">{t('actions.emailReport.buttons.send')}</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      
       <hr className="my-6" />
 
       <div className="shadow text-center p-5">
@@ -82,6 +82,10 @@ const ActionsTab = ({ dispatch }) => {
           </div>
         </button>
       </div>
+
+      <hr className="my-6" />
+
+      <div className="shadow text-center xs:text-5xl lg:text-xl p-5">{t('actions.disclaimer')}</div>
     </div>
   );
 };

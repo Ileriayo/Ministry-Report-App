@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { v4 as uuidv4 } from 'uuid';
 import set from 'lodash/set';
 
-import TextField from '../../../shared/TextField';
-import TextArea from '../../../shared/TextArea';
-import AppContext from '../../../context/AppContext';
-import Checkbox from '../../../shared/Checkbox';
-import { addItem } from '../../../utils';
-import ItemActions from '../../../shared/ItemActions';
-import ItemHeading from '../../../shared/ItemHeading';
-import AddItemButton from '../../../shared/AddItemButton';
+import TextField from '../../shared/TextField';
+import TextArea from '../../shared/TextArea';
+import AppContext from '../../context/AppContext';
+import Checkbox from '../../shared/Checkbox';
+import { addItem } from '../../utils';
+import ItemActions from '../../shared/ItemActions';
+import ItemHeading from '../../shared/ItemHeading';
+import AddItemButton from '../../shared/AddItemButton';
 
 const FollowupTab = ({ data, onChange }) => {
   const context = useContext(AppContext);

@@ -7,7 +7,7 @@ module.exports = {
     repo: '',
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Go to App', link: '' },
+      { text: 'Go to App', link: 'https://myrccreport.firebaseapp.com' },
     ],
     sidebar: [
       '/',
